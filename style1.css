@@ -1,0 +1,235 @@
+@charset "UTF-8";
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+        
+body {
+     background-color: #F4F1E2;
+     color: #333;
+     line-height: 1.6;
+}
+        
+a {
+     text-decoration: none;
+     color: #513229;
+     transition: all 0.3s ease;
+}
+        
+a:hover {
+     color: #513229;
+}
+        
+.container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+}
+        
+.section-title {
+     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+     font-size: 2.5rem;
+     color: #513229;;
+     text-align: center;
+     margin-bottom: 50px;
+     position: relative;
+}
+        
+.section-title::after {
+     content: "";
+     display: block;
+     width: 100px;
+     height: 3px;
+     background: #513229;
+     margin: 15px auto;
+}
+        
+.btn {
+     display: inline-block;
+     padding: 12px 30px;
+     background-color: #513229;;
+     color: white;
+     border-radius: 30px;
+     font-weight: bold;
+     transition: all 0.3s ease;
+     border: none;
+     cursor: pointer;
+}
+        
+.btn:hover {
+     background-color: #513229;
+     transform: translateY(-3px);
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+        
+     
+header {
+     background-color: white;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     position: fixed;
+     width: 100%;
+     top: 0;
+     z-index: 1000;
+}
+        
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 0;
+        }
+        
+.logo {
+     display: flex;
+     align-items: center;
+     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+     font-size: 1.8rem;
+     color: #513229;
+}
+        
+.logo::before {
+     content: "❤️";
+     margin-right: 10px;
+     font-size: 1rem;
+}
+        
+.nav-links {
+     display: flex;
+     list-style: none;
+}
+        
+.nav-links li {
+     margin-left: 30px;
+}
+        
+.nav-links a {
+     position: relative;
+     padding: 5px 0;
+}
+        
+.nav-links a::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0;
+     height: 2px;
+     background-color: #513229;
+     transition: width 0.3s ease;
+}
+        
+.nav-links a:hover::after {
+     width: 100%;
+}
+        
+.search-box {
+     display: flex;
+     align-items: center;
+}
+        
+.search-box input {
+     padding: 8px 15px;
+     border: 1px solid #ddd;
+     border-radius: 20px;
+     outline: none;
+     transition: all 0.3s ease;
+}
+        
+.search-box input:focus {
+     border-color: #513229;
+}
+        
+.search-box button {
+     background: none;
+     border: none;
+     margin-left: 10px;
+     cursor: pointer;
+     font-size: 1.2rem;
+     color: #513229;
+}
+
+
+
+.content {
+     max-width: 1200px;
+     margin: 30px auto;
+     padding: 0 20px;
+        }
+        
+
+.about-section {
+     display: flex;
+     margin-bottom: 40px;
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+     overflow: hidden;
+}
+        
+.about-image {
+     flex: 1;
+     min-height: 300px;
+     background-image: url('08.jpg');
+     background-size: cover;
+     background-position: center;
+}
+        
+.about-text {
+     flex: 1;
+     padding: 30px;
+}
+
+.about-text p {
+     text-indent: 2em;
+     line-height: 1.8;
+     margin-bottom: 15px;
+	 font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	 color: #513229;
+}
+
+.about-text h1{
+	 color: #513229;
+	 font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+        
+.gallery-section {
+     background-color: white;
+     border-radius: 10px;
+     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+     padding: 30px;
+}
+        
+.gallery-title {
+     text-align: center;
+     margin-bottom: 30px;
+     color: #555;
+}
+.gallery-title h2{
+	color: #513229;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+        
+.gallery-grid {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 20px;
+}
+        
+.gallery-item {
+     height: 200px;
+     background-size: cover;
+     background-position: center;
+     border-radius: 8px;
+     transition: transform 0.3s;
+     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+        
+.gallery-item:hover {
+     transform: scale(1.05);
+}
+        
+h1, h2, h3 {
+     color: #513229;
+     margin-bottom: 20px;
+}

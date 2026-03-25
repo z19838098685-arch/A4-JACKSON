@@ -1,0 +1,360 @@
+@charset "UTF-8";
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+        
+body {
+     background-color: #F4F1E2;
+     color: #333;
+     line-height: 1.6;
+}
+        
+a {
+     text-decoration: none;
+     color: #513229;
+     transition: all 0.3s ease;
+}
+        
+a:hover {
+     color: #513229;
+}
+        
+.container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+}
+        
+.section-title {
+     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+     font-size: 2.5rem;
+     color: #513229;;
+     text-align: center;
+     margin-bottom: 50px;
+     position: relative;
+}
+        
+.section-title::after {
+     content: "";
+     display: block;
+     width: 100px;
+     height: 3px;
+     background: #513229;
+     margin: 15px auto;
+}
+        
+.btn {
+     display: inline-block;
+     padding: 12px 30px;
+     background-color: #513229;;
+     color: white;
+     border-radius: 30px;
+     font-weight: bold;
+     transition: all 0.3s ease;
+     border: none;
+     cursor: pointer;
+}
+        
+.btn:hover {
+     background-color: #513229;
+     transform: translateY(-3px);
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+        
+     
+header {
+     background-color: white;
+     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     position: fixed;
+     width: 100%;
+     top: 0;
+     z-index: 1000;
+}
+        
+.navbar {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 20px 0;
+        }
+        
+.logo {
+     display: flex;
+     align-items: center;
+     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+     font-size: 1.8rem;
+     color: #513229;
+}
+        
+.logo::before {
+     content: "❤️";
+     margin-right: 10px;
+     font-size: 1rem;
+}
+        
+.nav-links {
+     display: flex;
+     list-style: none;
+}
+        
+.nav-links li {
+     margin-left: 30px;
+}
+        
+.nav-links a {
+     position: relative;
+     padding: 5px 0;
+}
+        
+.nav-links a::after {
+     content: "";
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 0;
+     height: 2px;
+     background-color: #513229;
+     transition: width 0.3s ease;
+}
+        
+.nav-links a:hover::after {
+     width: 100%;
+}
+        
+.search-box {
+     display: flex;
+     align-items: center;
+}
+        
+.search-box input {
+     padding: 8px 15px;
+     border: 1px solid #ddd;
+     border-radius: 20px;
+     outline: none;
+     transition: all 0.3s ease;
+}
+        
+.search-box input:focus {
+     border-color: #513229;
+}
+        
+.search-box button {
+     background: none;
+     border: none;
+     margin-left: 10px;
+     cursor: pointer;
+     font-size: 1.2rem;
+     color: #513229;
+}
+
+.banner {
+     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('500.jpg') no-repeat center center;
+     background-size: cover;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     color: white;
+     padding-top: 80px;
+}
+        
+.banner h1 {
+     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+     font-size: 4rem;
+     margin-bottom: 20px;
+     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+        
+.banner p {
+     font-size: 1.5rem;
+     margin-bottom: 40px;
+     max-width: 800px;
+}
+        
+.banner-btns {
+     display: flex;
+     gap: 20px;
+}
+        
+.banner-btns .btn {
+     background-color: transparent;
+     border: 2px solid white;
+}
+        
+.banner-btns .btn:hover {
+     background-color: white;
+     color: #513229;;
+}
+        
+
+.content-section {
+     padding: 100px 0;
+}
+        
+
+.intro {
+     display: flex;
+     align-items: center;
+     gap: 50px;
+}
+        
+.intro-image {
+     flex: 1;
+     height: 400px;
+     background: url('100.jpg') no-repeat center center;
+     background-size: cover;
+     border-radius: 10px;
+     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease;
+}
+        
+.intro-image:hover {
+     transform: scale(1.02);
+}
+        
+.intro-text {
+     flex: 1;
+}
+
+.intro-text h2 {
+     font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+     font-size: 2rem;
+     color: #513229;
+     margin-bottom: 20px;
+}
+        
+.intro-text p {
+     margin-bottom: 20px;
+     font-size: 1.1rem;
+}
+        
+.intro-text .note {
+     font-size: 0.9rem;
+     color: #666;
+     font-style: italic;
+}
+        
+
+#design{
+     margin-top: -150px;
+}
+.design-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+
+}
+        
+.design-card {
+      flex: 1;
+      min-width: 250px;
+      max-width: 300px;
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+}
+
+.design-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.design-image {
+      height: 200px;
+      background-color: #ddd;
+      background-size: cover;
+      background-position: center;
+
+}
+
+.design-info {
+      padding: 20px;
+}
+
+.design-info h3 {
+      color: #513229;
+      margin-bottom: 10px;
+	  font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+
+@media (max-width: 992px) {
+.intro {
+      flex-direction: column;
+}
+
+.intro-image, .intro-text {
+      flex: none;
+      width: 100%;
+}
+            
+.timeline::after {
+      left: 31px;
+}
+            
+.timeline-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+}
+
+.timeline-item::after {
+      left: 18px;
+}
+
+.left::after, .right::after {
+      left: 18px;
+}
+
+.right {
+       left: 0;
+}
+
+.plays-container {
+       columns: 2;
+}
+}
+
+@media (max-width: 768px) {
+.navbar {
+       flex-direction: column;
+       padding: 15px 0;
+}
+
+.nav-links {
+       margin-top: 20px;
+       flex-wrap: wrap;
+       justify-content: center;
+}
+
+.nav-links li {
+       margin: 0 15px 10px;
+}
+            
+.banner h1 {
+       font-size: 2.5rem;
+}
+            
+.banner p {
+       font-size: 1.2rem;
+}
+            
+.banner-btns {
+       flex-direction: column;
+       width: 80%;
+}
+
+.craft-card {
+        min-width: 100%;
+}
+            
+.plays-container {
+        columns: 1;
+}
+}
